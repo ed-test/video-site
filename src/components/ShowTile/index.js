@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
+import { mapProps } from 'recompose';
 
 import './styles.css';
 
@@ -25,4 +26,12 @@ ShowTile.propTypes = {
   title: PropTypes.string,
 };
 
-export default ShowTile;
+const enhance = mapProps(props => {
+  const { isFeatured, image, thumbnail } = props;
+  return {
+    ...props,
+    imageUrl: isFeatured ? image : thumbnail,
+  };
+});
+
+export default enhance(ShowTile);

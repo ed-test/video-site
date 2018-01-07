@@ -1,0 +1,10 @@
+.ShowTileList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ShowTileList__thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 20px;
+}

@@ -14,7 +14,10 @@ const ShowTileList = ({ featuredShow, shows }) => {
   return (
     <div className='ShowTileList'>
       <ShowTile isFeatured { ...featuredShow } />
-      {shows.length && shows.map(show => <ShowTile key={ show.id } { ...show } />)}
+      <div className='ShowTileList__thumbnails'>
+        {shows.length &&
+          shows.map(show => <ShowTile key={ show.id } { ...show } />)}
+      </div>
     </div>
   );
 };
