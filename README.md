@@ -22,3 +22,11 @@ Prettier is also used for auto-formatting along with eslint integration.
 
 Although the assignment guidelines include sass, I've decided not to go with
 Sass and remain with PostCss which comes with `create-react-app`.
+
+### TODOS (Things I'd do with more time)
+
+* `package.json` cleanup
+  * The generated package.json file doesn't split devDependencies. I would clean
+    this up.
+* Module resolver for both css and babel
+  * To avoid ugly relative imports eg. `../../../components`

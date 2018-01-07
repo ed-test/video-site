@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './styles.css';
 
+import ShowTileList from '../../components/ShowTileList';
 import ShowTile from '../../components/ShowTile';
 
 class Home extends Component {
@@ -13,6 +14,7 @@ class Home extends Component {
           imageUrl='https://placehold.it/400x400'
           isFeatured
           title='Hello World' />
+        <ShowTileList shows={ [] } />
       </div>
     );
   }
