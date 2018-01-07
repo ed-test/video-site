@@ -1,0 +1,5 @@
+.ShowTile {
+  & img {
+    position: absolute;
+  }
+}
