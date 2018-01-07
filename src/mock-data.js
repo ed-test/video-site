@@ -1,4 +1,4 @@
-const videos = [
+const shows = [
   {
     id: '1',
     title: 'Gold Rush',
@@ -71,4 +71,4 @@ const videos = [
   },
 ];
 
-export { videos };
+export { shows };
