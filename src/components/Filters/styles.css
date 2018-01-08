@@ -1,0 +1,21 @@
+.Filters {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.Filter-item {
+  cursor: pointer;
+  display: block;
+  margin-left: 10px;
+
+  &:hover,
+  &.Filter-item--active {
+    text-decoration: underline;
+  }
+
+  &.Filter-item--active {
+    cursor: inherit;
+  }
+}

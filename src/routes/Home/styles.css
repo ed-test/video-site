@@ -1,2 +1,12 @@
 .Home {
+  & header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & h1 {
+    font-size: 18px;
+    margin: 20px;
+  }
 }
