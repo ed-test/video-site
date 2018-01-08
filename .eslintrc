@@ -1,14 +1,10 @@
 {
   "parser": "babel-eslint",          // https://github.com/babel/babel-eslint
   "extends": [
-    "plugin:flowtype/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:import/errors"
   ],
   "plugins": [
     "react",                         // https://github.com/yannickcr/eslint-plugin-react
-    "flowtype",
-    "jsx-a11y"
   ],
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
@@ -244,25 +240,8 @@
         newlines-between: "always-and-inside-groups"
       }
     ],
-  /**
- * Flow
- */
-    "flowtype/delimiter-dangle": [2, "always-multiline"],
-    "flowtype/require-return-type": 2,
-    "flowtype/require-parameter-type": 2,
-    "flowtype/require-valid-file-annotation": [2, "always", {
-       "annotationStyle": "none"
-    }],
-    "flowtype/no-weak-types": [2, {
-      "any": true,
-      "Object": false,
-      "Function": false
-    }]
   },
   "settings": {
-    "flowtype": {
-      "onlyFilesWithFlowAnnotation": true
-    },
     "import/resolver": {
       "node": {
         "paths": ["src"]
