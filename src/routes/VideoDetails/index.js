@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 import { compose, mapProps } from 'recompose';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -12,6 +13,9 @@ import ShowTileList from '../../components/ShowTileList';
 
 const VideoDetails = ({ show }) => (
   <div className='VideoDetails'>
+    <Helmet>
+      <title>{`${show.title} - Discover Channel`}</title>
+    </Helmet>
     <header>
       <h1>
         <Link to='/'>Discovery Channel</Link>
