@@ -8,6 +8,7 @@ const shows = [
       'https://res.cloudinary.com/discovery-go/image/upload/c_crop,w_3587,h_2019,x_414,y_329/c_fill,w_1400,h_788,q_auto/v1505836953/Gold-Rush-SN8-art-DISC.jpg',
     genre: 'Documentary',
     related: ['2'],
+    videoid: 'WuWNzSvnFCQ',
   },
   {
     id: '2',
@@ -18,6 +19,7 @@ const shows = [
       'https://api.discovery.com/v1/images/591b3a506b66d1822824f32d?aspectRatio=16x9&width=1400&key=3020a40c2356a645b4b4',
     related: ['1'],
     genre: 'Action',
+    videoid: 'Q9VgpLPMiqs',
   },
   {
     id: '3',
@@ -28,6 +30,7 @@ const shows = [
       'https://api.discovery.com/v1/images/58c2dbc56b66d12f2addebe4?aspectRatio=16x9&width=1400&key=3020a40c2356a645b4b4',
     related: ['1'],
     genre: 'Action',
+    videoid: 'lQ5ebrq1OjI',
   },
   {
     id: '4',
@@ -38,6 +41,7 @@ const shows = [
       'https://res.cloudinary.com/discovery-go/image/upload/c_crop,w_3587,h_2019,x_414,y_329/c_fill,w_1400,h_788,q_auto/v1505836953/Gold-Rush-SN8-art-DISC.jpg',
     related: ['1'],
     genre: 'Documentary',
+    videoid: 'lQ5ebrq1OjI',
   },
   {
     id: '5',
@@ -48,6 +52,7 @@ const shows = [
       'https://api.discovery.com/v1/images/59f78a6d6b66d14ccb00e82c?aspectRatio=16x9&width=1400&key=3020a40c2356a645b4b4',
     related: ['1'],
     genre: 'Documentary',
+    videoid: 's37poDWlV0Y',
   },
   {
     id: '6',
@@ -58,6 +63,7 @@ const shows = [
       'https://res.cloudinary.com/discovery-go/image/upload/c_crop,w_3587,h_2019,x_414,y_329/c_fill,w_1400,h_788,q_auto/v1505836953/Gold-Rush-SN8-art-DISC.jpg',
     related: ['1'],
     genre: 'Documentary',
+    videoid: 'wV9nvIClGqE',
   },
   {
     id: '7',
@@ -68,6 +74,7 @@ const shows = [
       'https://res.cloudinary.com/discovery-go/image/upload/c_crop,w_3587,h_2019,x_414,y_329/c_fill,w_1400,h_788,q_auto/v1505836953/Gold-Rush-SN8-art-DISC.jpg',
     related: ['1'],
     genre: 'Action',
+    videoid: 'XCpw1hGAWDA',
   },
   {
     id: '8',
@@ -78,6 +85,7 @@ const shows = [
       'https://api.discovery.com/v1/images/591b3a506b66d1822824f32d?aspectRatio=16x9&width=1400&key=3020a40c2356a645b4b4',
     related: ['1'],
     genre: 'Action',
+    videoid: 'De0XSVHLRBU',
   },
 ];
 

@@ -13,7 +13,7 @@ const EmptyShowTileList = () => (
 const ShowTileList = ({ featuredShow, shows }) => {
   return (
     <div className='ShowTileList'>
-      <ShowTile isFeatured { ...featuredShow } />
+      {featuredShow && <ShowTile isFeatured { ...featuredShow } />}
       <div className='ShowTileList__thumbnails'>
         {shows.length &&
           shows.map(show => <ShowTile key={ show.id } { ...show } />)}
@@ -29,8 +29,8 @@ ShowTileList.propTypes = {
 
 const enhance = compose(
   branch(({ shows }) => !shows.length, renderComponent(EmptyShowTileList)),
-  mapProps(({ shows }) => ({
-    featuredShow: shows[0],
+  mapProps(({ hasFeatured = true, shows }) => ({
+    featuredShow: hasFeatured ? shows[0] : null,
     shows: shows.slice(1, shows.length),
   }))
 );

@@ -1,6 +1,7 @@
 .Home {
   & header {
     align-items: center;
+    background-color: #121723;
     display: flex;
     justify-content: space-between;
   }

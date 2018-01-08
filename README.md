@@ -32,3 +32,4 @@ Sass and remain with PostCss which comes with `create-react-app`.
   * To avoid ugly relative imports eg. `../../../components`
 * Use variables for colors and type
 * Use constants with key/values for genre and filtering
+* Come up with a related videos structure
