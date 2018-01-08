@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { compose, mapProps, withStateHandlers } from 'recompose';
+import sortBy from 'lodash.sortby';
 
 import './styles.css';
 
@@ -41,10 +42,11 @@ const enhance = compose(
   ),
   mapProps(props => {
     const { activeFilter } = props;
-    const shows =
+    let shows =
       activeFilter === 'All'
         ? mockShows
         : mockShows.filter(show => show.genre === activeFilter);
+    shows = sortBy(shows, ['title']);
 
     return {
       ...props,
